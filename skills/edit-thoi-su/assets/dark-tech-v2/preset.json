@@ -1,0 +1,190 @@
+{
+  "version": 2,
+  "engine": "remotion",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "palette": {
+    "ink": "#060b13",
+    "cyan": "#66ecf7",
+    "violet": "#b497ff",
+    "amber": "#ffca7b"
+  },
+  "voice": {
+    "playbackRateTarget": 1.2,
+    "integratedLufsStartingTarget": -14,
+    "truePeakCeilingDbtp": -1.8,
+    "continuousSingleTrack": true,
+    "videoMuted": true
+  },
+  "captions": {
+    "maxLines": 2,
+    "wordsPerCard": [
+      10,
+      12
+    ],
+    "fontSize": 54,
+    "fontWeight": 700,
+    "lineHeight": 1.23,
+    "width": 900,
+    "centerX": 540,
+    "centerY": 1290,
+    "strokeColor": "#000000",
+    "strokeWidth": 2.8,
+    "hideDuringSplit": false,
+    "splitCenterY": 960,
+    "animatePositionWithLayout": true
+  },
+  "dateNote": {
+    "format": "dd/mm/yyyy",
+    "date": null,
+    "deriveDateFromJob": true,
+    "durationSeconds": 10,
+    "left": 48,
+    "topPercent": 58,
+    "fontSize": 36,
+    "fontWeight": 600,
+    "letterSpacing": 1.5,
+    "paddingY": 13,
+    "paddingX": 20,
+    "radius": 18,
+    "textColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "backgroundOpacity": 0.5
+  },
+  "layout": {
+    "mixPopupAndSplit": true,
+    "persistShuffledAssignment": true,
+    "presenterFullWidth": true,
+    "splitPresenterTop": 920,
+    "splitPresenterHeight": 1000,
+    "presenterObjectPosition": "50% 50%",
+    "layoutEnterSeconds": 0.55,
+    "layoutExitSeconds": 0.45,
+    "popupBlurPx": 18,
+    "popupBackgroundBrightness": 0.53
+  },
+  "card": {
+    "left": 40,
+    "centerX": 516,
+    "width": 952,
+    "popupTop": 280,
+    "splitTop": 280,
+    "transformOrigin": "50% 0%",
+    "headerHeight": 72,
+    "footerHeightWithDetail": 108,
+    "footerHeightWithoutDetail": 70,
+    "contentHeight": "fit-content",
+    "splitContentScale": 0.68,
+    "popupContentScale": 1,
+    "splitCardScale": 0.86,
+    "popupCardScale": 0.86,
+    "entryVariants": [
+      "center-pop",
+      "slide-left",
+      "slide-right",
+      "split-rise"
+    ],
+    "spring": {
+      "damping": 25,
+      "stiffness": 165,
+      "mass": 0.85
+    },
+    "exitSeconds": 0.35,
+    "minimumReadableArticleHoldSeconds": 4,
+    "footerHeightWithoutMetadata": 0,
+    "captureMetadataDisplay": {
+      "showOnlyFieldsPresentInCapture": true,
+      "addMissingSource": false,
+      "addMissingDate": false,
+      "addMissingCaption": false,
+      "hideEmptyRowsAndFooter": true,
+      "autoAddVerificationDisclaimers": false,
+      "researchNotesLocation": "job_only"
+    }
+  },
+  "overlaySafeArea": {
+    "referenceOnly": true,
+    "universalPlatformSpecification": false,
+    "applyOnlyToOverlays": true,
+    "preservePresenterLayoutAndCrop": true,
+    "preserveCaptionAndDateNoteLayout": true,
+    "preserveMixedPopupSplitAssignment": true,
+    "bounds": {"left": 96, "right": 936, "top": 270, "bottom": 1260},
+    "clipPath": "inset(270px 144px 660px 96px)",
+    "clipThroughoutAnimation": true,
+    "graphicStage": {
+      "width": 1080, "height": 1920,
+      "left": 84, "top": 210,
+      "scale": 0.8, "transformOrigin": "0 0"
+    },
+    "portrait": {"width": 290, "imageHeight": 250, "top": 280, "left": 100, "right": 180},
+    "verifyTextAndSourcesNotClipped": true,
+    "verifySplitCardClearsCenteredCaptions": true
+  },
+  "highlightTitle": {
+    "reference": "references/highlight-anton.md",
+    "fontFamily": "Anton",
+    "fontWeight": 400,
+    "uppercase": true,
+    "solidFill": true,
+    "outline": false,
+    "horizontalScale": 1.2,
+    "letterSpacingPx": 2.5,
+    "textShadow": "0 4px 12px #101f2b66",
+    "adaptPositionToHeadAndSafeZone": true,
+    "behindMovingHead": true,
+    "foregroundAndBackgroundSameSourceFrame": true,
+    "colorSelection": {
+      "derivePaletteFromActualScene": true,
+      "oneColorPerSegment": true,
+      "randomizeOnceDuringPreparation": true,
+      "persistSegmentIdsColorsAndSeed": true,
+      "avoidAdjacentRepeatsWhenPossible": true,
+      "randomizeDuringRender": false,
+      "exampleSceneOnlyPalette": ["#9fbeae", "#db9a81", "#a5bdcb", "#cbb48d", "#b1acc5"]
+    },
+    "topGradient": {
+      "heightFraction": 0.333333,
+      "color": "#000000",
+      "stops": [[0, 0.9], [0.48, 0.72], [0.79, 0.38], [1, 0]],
+      "fadeWithHighlight": true
+    },
+    "surroundingDim": {"startingMaxBlackOpacity": 0.22, "softFaceOpening": true},
+    "foregroundExposure": {"adjustToSource": true, "exampleBaseBrightness": 1.13, "exampleHighlightBrightness": 0.98},
+    "spring": {"damping": 16, "stiffness": 150, "mass": 0.8},
+    "keepCaptionStyleAndAudio": true
+  },
+  "arollGrade": {
+    "adjustToSource": true,
+    "colorInterpolation": "sRGB",
+    "rgbGains": [
+      0.985,
+      1.005,
+      1.045
+    ],
+    "brightness": 1.13,
+    "contrast": 1.025,
+    "saturation": 1.09,
+    "applyOnlyToAroll": true
+  },
+  "delivery": {
+    "interactivePreviewFirst": true,
+    "fullVideoExportOnlyOnRequest": true,
+    "driveUploadOnlyWhenRequested": true,
+    "defaultDriveFolder": {
+      "name": "A.Tiktok clip",
+      "id": "1JyRWCQ7lxYcMST3SCGluOtYcjXdRYOuL",
+      "url": "https://drive.google.com/drive/folders/1JyRWCQ7lxYcMST3SCGluOtYcjXdRYOuL"
+    },
+    "verifyUploadByReadback": true,
+    "preserveLocalExport": true
+  },
+  "editorial": {
+    "format": "political_analysis_with_personal_opinions",
+    "illustrateCommentaryWithoutAutomaticCaveats": true,
+    "preserveAuthenticSourceText": true
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edit Thời Sự"
+  short_description: "Remotion thời sự: cắt thô, duyệt, dark tech và tư liệu"
+  default_prompt: "Dùng $edit-thoi-su dựng video thời sự dọc bằng Remotion: cắt thô 1.2x và chuẩn hóa tiếng để tôi duyệt, rồi thêm tư liệu có nguồn, phụ đề và dark tech xen kẽ popup/chia khung theo phong cách đã lưu."

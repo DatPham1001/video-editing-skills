@@ -1,0 +1,180 @@
+{
+  "skills": [
+    "edit-thoi-su",
+    "capture-media-index"
+  ],
+  "files": [
+    {
+      "path": "skills/edit-thoi-su/agents/openai.yaml",
+      "bytes": 402,
+      "sha256": "50fe7c8bd8951f7d2aac06e0e1ff6ac6a78797130548bd02620e90521fe83bda"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/dark-tech-v2/preset.json",
+      "bytes": 5566,
+      "sha256": "0c0e8d6b58e868557373534c46aa7cad92125a5ab64124da8e6f72a7316d8511"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/EvidenceCardV1.tsx",
+      "bytes": 3352,
+      "sha256": "4ec0221d7b8ee355f835774de9864434feafc4d9e86d04cee4cef13c12b84322"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/fonts/reference-bold.ttf",
+      "bytes": 980756,
+      "sha256": "766f06ac8761f82f25d032a220e89438f6064591af9915061f20b949efdedf69"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/fonts/reference-regular.ttf",
+      "bytes": 1036584,
+      "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/Headline.tsx",
+      "bytes": 1166,
+      "sha256": "4a7766d4ac4ae214c480949070f3d6aa433946ce25d90ab131e8b0011520160e"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/integrity.json",
+      "bytes": 558,
+      "sha256": "c947649a378073ee5f436dc0dce0f2aaf5e8bac7d90e38e45c7f87c9f6371fc6"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/preset.json",
+      "bytes": 2232,
+      "sha256": "cc47d659323ec74e48279fe25a9032cb07196994ec90bb44f8361477f710c640"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/StoryCard.tsx",
+      "bytes": 5994,
+      "sha256": "87b4734c016a7d9fc189e528726d0b80a95a8ce41d196461b45d6c4f0f8b4811"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/fonts/Anton/Anton-Regular.ttf",
+      "bytes": 170812,
+      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/fonts/Anton/METADATA.pb",
+      "bytes": 914,
+      "sha256": "53e7d98a610693d7163915083540a2400f2663ec775753230d15861087c116e1"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/fonts/Anton/OFL.txt",
+      "bytes": 4484,
+      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/HighlightPopV1.tsx",
+      "bytes": 2442,
+      "sha256": "0e4f398598748ffacef1825b10cc699ddda0525a693d42d6895cc2c89f8ac101"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/integrity.json",
+      "bytes": 182,
+      "sha256": "d91d2c7565988482903e29eadbbb0b695b8a16c113e6d471f295a507a2affa22"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/preset.json",
+      "bytes": 1405,
+      "sha256": "41fd9e55036e93fa8c831070152f8840daef1b1d1ab403f458539fae868ce111"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/audio-safe-trims.md",
+      "bytes": 2664,
+      "sha256": "dc7114c6ee7f746a6e00931cb80cae0cdd026c44e9c19d7cbcc9bb35167477a8"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/dark-tech-v2.md",
+      "bytes": 11295,
+      "sha256": "ae5941c371f4ab2a0aac71f3aac9be90890ad916f60c1c10e651b003e40862a3"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/evidence-remotion.md",
+      "bytes": 8894,
+      "sha256": "b533df690de523fbdf2247db6d6829cd5efbb96c3bb49f02b23a716f1ad1c4e7"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/export-drive.md",
+      "bytes": 3661,
+      "sha256": "a8b5d479a610ce427394ae8194915a9948de5a4af1d704ed0fd195184693c877"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/highlight-anton.md",
+      "bytes": 5057,
+      "sha256": "20ad1a64e36a87c1f035a45f3db635bb02ea8e4a0a45da116e2e03df2c5ed8d1"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/highlight-pop.md",
+      "bytes": 4198,
+      "sha256": "d9a82b722f23a2a5b3a9071840b36e069be554297479f59686cc376255d9f447"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/retake-qc.md",
+      "bytes": 5841,
+      "sha256": "6b869b29aa94e049f2994b7886c78c1a21609224db3e533b0d95833437c91884"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/workflow.md",
+      "bytes": 8351,
+      "sha256": "356ba86b86fb025ef432227a7eb70524c7e7bfc9cfd6bbdd08a21e9d8d0ba674"
+    },
+    {
+      "path": "skills/edit-thoi-su/scripts/plan_evidence_insert.py",
+      "bytes": 3196,
+      "sha256": "2db9116048fe3b802cbb01cb72888ecc4cb1b632de530112c7682957a7ce6c61"
+    },
+    {
+      "path": "skills/edit-thoi-su/SKILL.md",
+      "bytes": 9597,
+      "sha256": "f14b6c5796b6d034380508e6058011a71b9c5f6c631d6fbea392d3e5fa7daaa5"
+    },
+    {
+      "path": "skills/capture-media-index/agents/openai.yaml",
+      "bytes": 342,
+      "sha256": "e480de11b955650076ee67a47921b8790fc3436b9d35daf2f5cc43b4b0009e68"
+    },
+    {
+      "path": "skills/capture-media-index/references/catalog-format.md",
+      "bytes": 7824,
+      "sha256": "cbc272c8a157703d0f89331c2da1d3f044818eb8ce17d15effd95b2abf9b2dae"
+    },
+    {
+      "path": "skills/capture-media-index/references/duplicate-cleanup.md",
+      "bytes": 6728,
+      "sha256": "adf6c3acd01ede31ce7ceaac35c28892190ee5fe5b4e56413979dba8eb9bf81d"
+    },
+    {
+      "path": "skills/capture-media-index/scripts/plan_duplicates.py",
+      "bytes": 4059,
+      "sha256": "923dfacc382f5fcb8b41a3c0405fea57867f3380f185325fefb8574e55b2fb33"
+    },
+    {
+      "path": "skills/capture-media-index/scripts/plan_update.py",
+      "bytes": 4561,
+      "sha256": "e532db4edade680cfda7e70848bffc122594e35a94b2de99edd31253a8abce35"
+    },
+    {
+      "path": "skills/capture-media-index/scripts/test_plan_duplicates.py",
+      "bytes": 2304,
+      "sha256": "245b57e4f573512c8c67ae23afedc1ec33650768eb5bfe91d09b0eaf0a664639"
+    },
+    {
+      "path": "skills/capture-media-index/scripts/test_plan_update.py",
+      "bytes": 3048,
+      "sha256": "112e3f6d577c0adad874366d160a4eb62be9cdec03a695bc2ad6f85afbecfdd3"
+    },
+    {
+      "path": "skills/capture-media-index/SKILL.md",
+      "bytes": 11496,
+      "sha256": "cf5601b6d6262ce545e969a2df9cb0f838cf978d9637b797d3c98b3000063770"
+    }
+  ],
+  "totalFiles": 33,
+  "totalBytes": 2319965,
+  "excluded": [
+    "Python bytecode/cache",
+    "credentials/env files",
+    "job media and capture library"
+  ]
+}

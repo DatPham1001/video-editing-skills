@@ -1,0 +1,4 @@
+interface:
+  display_name: "Capture Media Index"
+  short_description: "Index tư liệu mới và dọn bản trùng có thể khôi phục"
+  default_prompt: "Dùng $capture-media-index để cập nhật capture, chỉ phân tích file mới và dọn bản trùng SHA-256 vào khu cách ly, giữ bản gốc cùng liên kết index."

@@ -1,0 +1,19 @@
+{
+  "preset":"highlight-popup-v1",
+  "canvas":{"width":1080,"height":1920,"fps":30},
+  "panel":{"left":70,"top":730,"width":940,"height":460,"radius":28,"padding":42,"border":"2px solid #2F6E70","background":"linear-gradient(145deg,rgba(17,39,61,.95),rgba(7,19,33,.95))","shadow":"0 24px 65px #0008"},
+  "dimmer":"rgba(5,12,22,.36)",
+  "spring":{"damping":19,"stiffness":210,"mass":0.65},
+  "ease":[0.16,1,0.3,1],
+  "entry":{"opacityFrames":[0,5],"translateY":[64,0],"scale":[0.74,1]},
+  "exitLastFrames":6,
+  "line":{"staggerFrames":4,"opacityFrames":5,"translateFrames":7,"translateY":[24,0],"lineHeight":1.12,"letterSpacing":-1,"fontWeight":800,"whiteSpace":"nowrap"},
+  "font":"ReferenceSans / reference-bold.ttf from evidence-remotion-v1/fonts",
+  "colors":{"text":"#F7FAFC","teal":"#54E0C6","yellow":"#FFDD70"},
+  "pulse":{"peakAtRelativeToAccent":3,"endAtRelativeToAccent":10,"scaleBoost":0.025},
+  "underline":{"left":100,"bottom":36,"height":8,"width":736,"start":"max(4,accentAt-3)","duration":8},
+  "blur":{"assetId":"builtin:fx-gaussian-blur","radius":180,"scope":"per original clip, exact overlap"},
+  "render":{"codec":"vp9","imageFormat":"png","pixelFormat":"yuva420p","videoBitrate":"5M","concurrency":2,"audio":false},
+  "variables":["lines","fontSize","accent","accentAt","tag","durationInFrames"],
+  "captionPolicy":"preserve existing native caption content, geometry and pagination"
+}
