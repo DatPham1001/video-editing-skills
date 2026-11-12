@@ -1,6 +1,19 @@
-# Highlight ANTON sau đầu — kiểu đã duyệt
+# Highlight ANTON — bố cục theo nội dung
 
-Dùng khi hoàn thiện hoặc sửa highlight lời nói. Đây là typography riêng, không phải phụ đề hay card bài báo. Tái dùng thiết kế, không copy lời bình/timing của clip mẫu sang job khác. Cập nhật skill không tự áp vào video chưa yêu cầu sửa.
+Dùng khi hoàn thiện/sửa chữ nhấn lời nói, không đổi phụ đề hoặc card bài báo. Tái dùng thiết kế, không copy nội dung/timing của clip mẫu.
+
+## Quy tắc đã sửa theo phản hồi người dùng
+
+- **Hạ chữ nhấn, số và câu hỏi sát phía trên đầu.** Trên khung 1080×1920, bắt đầu ở top≈400px với cụm chữ một dòng và khoảng 365px với số cỡ lớn. Kiểm cả chân chữ và gạch chân theo tóc thật để giữ mặt rõ khi người nói chuyển động.
+- **Gradient chữ nhấn dùng đen thuần, đậm toàn ngang và kéo sâu xuống 60% chiều cao**, khoảng 1152px trên khung 1080×1920. Tham chiếu độ đậm theo chiều cao khung là 100% đến y=14%, 93% tại y=24%, 60% tại y=33%, 27% tại y=42%, 7% tại y=52% và trong suốt ở y=60%. Fade cùng chữ và kiểm vùng mắt/mặt ở các khung đại diện. Bố cục popup/split dành cho graphic trực quan dùng quy tắc riêng.
+- **Đoạn liệt kê bằng chữ có thể đặt giữa màn hình trên nền mờ/dim.** Với motion graphic ở giữa khung, xem [dựng theo nhịp thoại](speech-timed-editing.md). Tâm khối x=540/y=960, rộng≈790–840px. Tham chiếu blur24px/brightness0.70 so với grade; fade cùng đoạn. Danh sách hiện từng mục theo lời và tự căn giữa theo số hàng. Khi chuyển sang câu kết luận/điểm nhấn, đưa chữ trở lại phía trên; lưu placement theo từng mục nếu cần.
+- ANTON Regular400, HOA tô đặc, cỡ lớn, bóng mềm; cụm≈100–150px, số ngắn có thể170–200px. Đo font thật gồm dấu/tracking/scale và kiểm không tràn/đè phụ đề.
+- **Mỗi đoạn một màu pastel cố định:** vàng kem `#F4DEA8`, mint `#CAE7D7`, xanh phấn `#C5DEED`, hồng `#EDCDDB`, lavender `#D8D0EF`, đào `#F0D5B5`. Lưu theo ID; không random theo frame hoặc đổi từng chữ. Màu cờ/ảnh nguồn/phụ đề/vệt tô bài báo giữ riêng.
+- Giữ animation vừa đủ, chuyển động nhẹ. Một video muted và một voice track liên tục; không đổi cut/rate/gain/grade khi chỉ sửa bố cục chữ. Kiểm entry/hold/exit, phân biệt rõ đoạn liệt kê giữa nền mờ và đoạn nhấn phía trên A-roll rõ.
+
+## Tùy chọn lồng chữ sau đầu
+
+Các thông số dưới đây dùng khi chọn kiểu chữ sau đầu với matte chuyển động; không có nghĩa mọi highlight đều phải tách nền hoặc đặt giữa màn hình.
 
 ## Chữ và màu theo cảnh
 
@@ -26,6 +39,9 @@ Giữ mặt tự nhiên, không đẩy sáng riêng quá mức so với cảnh t
 
 ## Motion và kiểm
 
-Spring nhẹ theo cụm/từ, không rung liên tục; tham chiếu damping16–17, stiffness140–150, mass0.8; nhịp sau trễ≈5 frame ở 30fps. Giữ bố cục chữ ổn định khi đọc. Entrance≈0.23s, exit≈0.35s; đổi theo thời lượng câu khi cần.
+Spring nhẹ theo cụm/từ, từng dòng trễ vài frame, gạch dưới quét sáng một lần rồi giữ chữ đủ lâu để đọc; tham chiếu damping16–17, stiffness140–150, mass0.8; nhịp sau trễ≈5 frame ở 30fps. Giữ bố cục chữ ổn định khi đọc. Entrance≈0.23s, exit≈0.35s; đổi theo thời lượng câu khi cần.
 
 Kiểm entry/hold/exit và playback: cùng một màu trong đoạn, đoạn khác đổi theo plan, tất cả glyph tô đặc/đủ dấu; chữ sau tóc theo chuyển động, ý chính còn đọc rõ; mặt cân sáng; subtitle/safe zone giữ nguyên. Hai lớp hình đều muted, tiếng vẫn một track liên tục. Preview để review; không tự xuất MP4/upload hoặc áp thiết kế mẫu vào toàn video chỉ vì skill được cập nhật.
+
+
+Quy tắc phạm vi tách nền: **chỉ bật lớp người tách nền khi layout hiện hành là chia hai/split và split progress > 0**. A-roll, highlight chữ, popup và countdown không bật matte. Không dùng điều kiện `split || highlight`; đây là mặc định hiện hành thay các preset lồng chữ sau đầu cũ.

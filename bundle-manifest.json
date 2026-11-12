@@ -5,129 +5,9 @@
   ],
   "files": [
     {
-      "path": "skills/edit-thoi-su/agents/openai.yaml",
-      "bytes": 402,
-      "sha256": "50fe7c8bd8951f7d2aac06e0e1ff6ac6a78797130548bd02620e90521fe83bda"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/dark-tech-v2/preset.json",
-      "bytes": 5566,
-      "sha256": "0c0e8d6b58e868557373534c46aa7cad92125a5ab64124da8e6f72a7316d8511"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/EvidenceCardV1.tsx",
-      "bytes": 3352,
-      "sha256": "4ec0221d7b8ee355f835774de9864434feafc4d9e86d04cee4cef13c12b84322"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/fonts/reference-bold.ttf",
-      "bytes": 980756,
-      "sha256": "766f06ac8761f82f25d032a220e89438f6064591af9915061f20b949efdedf69"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/fonts/reference-regular.ttf",
-      "bytes": 1036584,
-      "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/Headline.tsx",
-      "bytes": 1166,
-      "sha256": "4a7766d4ac4ae214c480949070f3d6aa433946ce25d90ab131e8b0011520160e"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/integrity.json",
-      "bytes": 558,
-      "sha256": "c947649a378073ee5f436dc0dce0f2aaf5e8bac7d90e38e45c7f87c9f6371fc6"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/preset.json",
-      "bytes": 2232,
-      "sha256": "cc47d659323ec74e48279fe25a9032cb07196994ec90bb44f8361477f710c640"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/StoryCard.tsx",
-      "bytes": 5994,
-      "sha256": "87b4734c016a7d9fc189e528726d0b80a95a8ce41d196461b45d6c4f0f8b4811"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/fonts/Anton/Anton-Regular.ttf",
-      "bytes": 170812,
-      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/fonts/Anton/METADATA.pb",
-      "bytes": 914,
-      "sha256": "53e7d98a610693d7163915083540a2400f2663ec775753230d15861087c116e1"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/fonts/Anton/OFL.txt",
-      "bytes": 4484,
-      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/HighlightPopV1.tsx",
-      "bytes": 2442,
-      "sha256": "0e4f398598748ffacef1825b10cc699ddda0525a693d42d6895cc2c89f8ac101"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/integrity.json",
-      "bytes": 182,
-      "sha256": "d91d2c7565988482903e29eadbbb0b695b8a16c113e6d471f295a507a2affa22"
-    },
-    {
-      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/preset.json",
-      "bytes": 1405,
-      "sha256": "41fd9e55036e93fa8c831070152f8840daef1b1d1ab403f458539fae868ce111"
-    },
-    {
-      "path": "skills/edit-thoi-su/references/audio-safe-trims.md",
-      "bytes": 2664,
-      "sha256": "dc7114c6ee7f746a6e00931cb80cae0cdd026c44e9c19d7cbcc9bb35167477a8"
-    },
-    {
-      "path": "skills/edit-thoi-su/references/dark-tech-v2.md",
-      "bytes": 11295,
-      "sha256": "ae5941c371f4ab2a0aac71f3aac9be90890ad916f60c1c10e651b003e40862a3"
-    },
-    {
-      "path": "skills/edit-thoi-su/references/evidence-remotion.md",
-      "bytes": 8894,
-      "sha256": "b533df690de523fbdf2247db6d6829cd5efbb96c3bb49f02b23a716f1ad1c4e7"
-    },
-    {
-      "path": "skills/edit-thoi-su/references/export-drive.md",
-      "bytes": 3661,
-      "sha256": "a8b5d479a610ce427394ae8194915a9948de5a4af1d704ed0fd195184693c877"
-    },
-    {
-      "path": "skills/edit-thoi-su/references/highlight-anton.md",
-      "bytes": 5057,
-      "sha256": "20ad1a64e36a87c1f035a45f3db635bb02ea8e4a0a45da116e2e03df2c5ed8d1"
-    },
-    {
-      "path": "skills/edit-thoi-su/references/highlight-pop.md",
-      "bytes": 4198,
-      "sha256": "d9a82b722f23a2a5b3a9071840b36e069be554297479f59686cc376255d9f447"
-    },
-    {
-      "path": "skills/edit-thoi-su/references/retake-qc.md",
-      "bytes": 5841,
-      "sha256": "6b869b29aa94e049f2994b7886c78c1a21609224db3e533b0d95833437c91884"
-    },
-    {
-      "path": "skills/edit-thoi-su/references/workflow.md",
-      "bytes": 8351,
-      "sha256": "356ba86b86fb025ef432227a7eb70524c7e7bfc9cfd6bbdd08a21e9d8d0ba674"
-    },
-    {
-      "path": "skills/edit-thoi-su/scripts/plan_evidence_insert.py",
-      "bytes": 3196,
-      "sha256": "2db9116048fe3b802cbb01cb72888ecc4cb1b632de530112c7682957a7ce6c61"
-    },
-    {
-      "path": "skills/edit-thoi-su/SKILL.md",
-      "bytes": 9597,
-      "sha256": "f14b6c5796b6d034380508e6058011a71b9c5f6c631d6fbea392d3e5fa7daaa5"
+      "path": "skills/capture-media-index/SKILL.md",
+      "bytes": 11496,
+      "sha256": "cf5601b6d6262ce545e969a2df9cb0f838cf978d9637b797d3c98b3000063770"
     },
     {
       "path": "skills/capture-media-index/agents/openai.yaml",
@@ -165,13 +45,143 @@
       "sha256": "112e3f6d577c0adad874366d160a4eb62be9cdec03a695bc2ad6f85afbecfdd3"
     },
     {
-      "path": "skills/capture-media-index/SKILL.md",
-      "bytes": 11496,
-      "sha256": "cf5601b6d6262ce545e969a2df9cb0f838cf978d9637b797d3c98b3000063770"
+      "path": "skills/edit-thoi-su/SKILL.md",
+      "bytes": 17696,
+      "sha256": "970dd362f3b5a8d175a15afce71c3ec8da34d4f14ddf2f08b390b9611135d0e0"
+    },
+    {
+      "path": "skills/edit-thoi-su/agents/openai.yaml",
+      "bytes": 402,
+      "sha256": "50fe7c8bd8951f7d2aac06e0e1ff6ac6a78797130548bd02620e90521fe83bda"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/dark-tech-v2/preset.json",
+      "bytes": 6891,
+      "sha256": "f09416a824ccf5483a3efd6efe3110c0f1e966271e9ea54b6c074d63c0fdeb2b"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/EvidenceCardV1.tsx",
+      "bytes": 3108,
+      "sha256": "27e9c460e03aead3ec07903b423fc366ad02eef117dc7ea98526dc97d5514b20"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/Headline.tsx",
+      "bytes": 1033,
+      "sha256": "750d37729ec881ee53fb164fef7943f7b5f96b6afec6bd2ce90ae0dd0f76bbc3"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/StoryCard.tsx",
+      "bytes": 5754,
+      "sha256": "15bb180f1d86cf861b8d83b640c0ec4d2ce1e187b6c685957a089a2e8bbf0c87"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/integrity.json",
+      "bytes": 353,
+      "sha256": "a665f4b2e801f59db4ed267fdbdc7d8a98ecf81899caeee0da61d6c50bade9a2"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/evidence-remotion-v1/preset.json",
+      "bytes": 2162,
+      "sha256": "9d655430bece806c8e85f0317743da77ab74da07cc12317ed08b80577736295c"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/fonts/Anton/Anton-Regular.ttf",
+      "bytes": 170812,
+      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/fonts/Anton/METADATA.pb",
+      "bytes": 914,
+      "sha256": "53e7d98a610693d7163915083540a2400f2663ec775753230d15861087c116e1"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/fonts/Anton/OFL.txt",
+      "bytes": 4484,
+      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/HighlightPopV1.tsx",
+      "bytes": 2442,
+      "sha256": "0e4f398598748ffacef1825b10cc699ddda0525a693d42d6895cc2c89f8ac101"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/integrity.json",
+      "bytes": 182,
+      "sha256": "d91d2c7565988482903e29eadbbb0b695b8a16c113e6d471f295a507a2affa22"
+    },
+    {
+      "path": "skills/edit-thoi-su/assets/highlight-popup-v1/preset.json",
+      "bytes": 1405,
+      "sha256": "41fd9e55036e93fa8c831070152f8840daef1b1d1ab403f458539fae868ce111"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/audio-safe-trims.md",
+      "bytes": 4574,
+      "sha256": "c6eb273d0a51416ed2947ba87799d41978f21709e10f219ddf0fe119bef303c0"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/dark-tech-v2.md",
+      "bytes": 12927,
+      "sha256": "9327424abea917b8293937cf97941444a6bded5c682a973cd3032703bcb19e8b"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/evidence-highlighting.md",
+      "bytes": 5984,
+      "sha256": "11475ebf3d141cb600e4da578b59be765619add329dd3dc0acc5e3bb8203d546"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/evidence-remotion.md",
+      "bytes": 8639,
+      "sha256": "bacabb2ec159d166d3cee723d229c92ba032fe13d4863d5f4d0ec8c5e88dee4e"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/export-drive.md",
+      "bytes": 3237,
+      "sha256": "f8dd14cbe3e767bf8daa36781d6504314984820d6e03c42b3938681dba715724"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/highlight-anton.md",
+      "bytes": 7769,
+      "sha256": "af33da3ec6e5a1aed7859dca3586d807c767e6357a9c32d46318a6a0a91f26eb"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/highlight-pop.md",
+      "bytes": 4198,
+      "sha256": "d9a82b722f23a2a5b3a9071840b36e069be554297479f59686cc376255d9f447"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/postcut-silence-qc.md",
+      "bytes": 3387,
+      "sha256": "2fb9ed9dfd5ad7b4802c0e8eb8395dae5d43ae2ed590223f5ded2d1ff1f5ae54"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/retake-qc.md",
+      "bytes": 9930,
+      "sha256": "d73872988c9c6c02a53210a4bc7d2c562c3793e6c35ba850a6cc8a513c98df9a"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/speech-timed-editing.md",
+      "bytes": 9450,
+      "sha256": "f7858f5190b0d8bad57887af6c4c2886757097c719292c104279835eb713619f"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/split-presenter-matte.md",
+      "bytes": 4076,
+      "sha256": "96caa035698df38fb7999180ac5e3985aa19cb60140f7225e955b8158285c96a"
+    },
+    {
+      "path": "skills/edit-thoi-su/references/workflow.md",
+      "bytes": 11087,
+      "sha256": "8f92ed6f4bc4fcf51aedc697cafd985e33123d4cb735f8ca4467eb3618562d8e"
+    },
+    {
+      "path": "skills/edit-thoi-su/scripts/plan_evidence_insert.py",
+      "bytes": 3196,
+      "sha256": "2db9116048fe3b802cbb01cb72888ecc4cb1b632de530112c7682957a7ce6c61"
     }
   ],
-  "totalFiles": 33,
-  "totalBytes": 2319965,
+  "totalFiles": 35,
+  "totalBytes": 346454,
   "excluded": [
     "Python bytecode/cache",
     "credentials/env files",

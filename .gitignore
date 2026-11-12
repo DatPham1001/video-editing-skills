@@ -7,3 +7,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.log
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+credentials.json
+service-account*.json

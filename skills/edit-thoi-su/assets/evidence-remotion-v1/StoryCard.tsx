@@ -10,8 +10,8 @@ const r=spring({frame:f,fps,config:{damping:19,stiffness:210,mass:.65}});
 const enter=interpolate(f,[0,5],[.15,1],ease),exit=interpolate(f,[d-6,d-1],[1,0],ease);
 const panel:React.CSSProperties={position:'absolute',left:90,top:210,width:900,height:910,boxSizing:'border-box',background:'linear-gradient(150deg,#11273D,#071321)',border:'2px solid #2F6E70',borderRadius:32,boxShadow:'0 26px 75px #0006',padding:52,color:white};
 const titleStyle:React.CSSProperties={fontSize:84,fontWeight:800,lineHeight:1.07,letterSpacing:-2,whiteSpace:'pre-line',marginTop:32};
-return <AbsoluteFill style={{fontFamily:'ReferenceSans',color:white,opacity:exit}}>
-<style>{`@font-face{font-family:ReferenceSans;src:url('${staticFile('fonts/reference-bold.ttf')}');font-weight:700 900;}@font-face{font-family:ReferenceSans;src:url('${staticFile('fonts/reference-regular.ttf')}');font-weight:400 600;}`}</style>
+return <AbsoluteFill style={{fontFamily:'Arial, sans-serif',color:white,opacity:exit}}>
+
 <AbsoluteFill style={{backgroundColor:'rgba(5,12,22,.46)',opacity:enter}}/>
 <div style={{position:'absolute',inset:0,opacity:enter,translate:`0 ${interpolate(r,[0,1],[64,0])}px`,scale:interpolate(r,[0,1],[.94,1])}}>
 {(kind==='ap'||kind==='reuters')&&<>

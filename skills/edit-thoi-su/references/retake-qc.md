@@ -2,9 +2,27 @@
 
 Dùng khi cắt thô bước1, chốt A-roll, hoặc người dùng báo còn nói lặp trên bản dựng. Phân biệt lần nói lại hỏng/đã được bao trùm với lặp có chủ ý để nhấn, câu chuyển ý, phép đối và lời kết. Giữ một lần nói hoàn chỉnh, đủ chủ ngữ và ý; bỏ trọn lần khởi động lại bị thừa. Không ghép các mảnh dở của nhiều take thành một câu giả. Transcript là công cụ nội bộ, không phải sản phẩm draft cần duyệt trước cắt.
 
+## Ba lượt rà bản cắt thô
+
+Mỗi lượt phải rà toàn thời lượng của bản dựng mới nhất. Cả ba lượt đều kiểm nói lặp, nói lại và đoạn khựng, với trọng tâm khác nhau:
+
+1. Rà theo ngữ cảnh câu để tìm lặp ý, take nói lại, câu bỏ dở và ngừng dư. Đối chiếu các ứng viên với lời nguồn, VAD và dạng sóng rồi sửa mốc cắt.
+2. Rà toàn bản bằng cửa sổ ngắn có chồng biên (ví dụ dài 2,5 giây, bước 1,5 giây). Tách riêng các lần mở câu nghi vấn. Kiểm biên âm và nhịp hình ở mối nối, giữ đủ âm tiết và nhịp thở có chủ ý.
+3. Rà lại toàn bản với lưới cửa sổ khác. Kiểm riêng đoạn trước, qua và sau mỗi mối nối vừa sửa, đồng thời quét lại khoảng ngừng dư và lỗi khựng hình hoặc tiếng.
+
+Nếu phát hiện lỗi, sửa trên media/timeline, tạo lại đầu ra và dùng bản đó ở lượt tiếp theo. Lượt ba là mức tối thiểu. Nếu vẫn có lỗi, sửa và rà thêm. Một lượt ASR, một lần quét im lặng hoặc chỉ kiểm vài mối nối không thay thế được một lượt rà toàn bản. Lưu theo lượt phiên bản, phạm vi, phương pháp kiểm, các mốc đã sửa hoặc lý do giữ và kết quả kiểm lại.
+
 ## Đọc chữ chưa đủ
 
+Trong mọi job cắt thô, rà toàn bộ audio đầu ra ở hai thang: câu có ngữ cảnh và từng lần mở câu/từ đứng lẻ. Cửa sổ 5–8s có chồng biên vẫn có thể gộp hai hoặc ba lần thử thành một câu; không dùng một lưới cửa sổ duy nhất làm bằng chứng đạt. Tách riêng các lần phát âm khoảng 0.5–3s, đổi điểm bắt đầu và đối chiếu lại với câu đầy đủ/source/waveform, nhất là đầu clip, sau ngắt, token dài và cụm mở đầu giống nhau. Khi người dùng báo một lỗi đã bỏ sót, rà toàn bản bằng thang nhỏ hơn (ví dụ 2.5s, bước 1.5s), rồi nhận dạng riêng từng lần thử ở mọi ứng viên.
+
+Chữ xuất hiện hai lần do cửa sổ chồng nhau không phải audio lặp. Cửa sổ quá ngắn cũng có thể nhận sai hoặc sinh vòng lặp/chữ không có trong audio; không cắt theo các kết quả này nếu chưa đối chiếu cửa sổ lân cận, source và tín hiệu thật. Trường hợp từ mở đầu đứng riêng rồi bắt đầu lại, hoặc chuỗi “cụm mở dở → câu hỏi → câu giải thích”, phải kiểm từng lần riêng thay vì mặc định coi là một câu hỏi–đáp hợp lệ. Giữ câu hoàn chỉnh truyền đủ ý; không xóa từ láy/cụm cố định hoặc hai vế cung cấp thông tin khác nhau chỉ vì trùng từ.
+
+Sửa take còn sót trên media hiện tại, giữ tốc độ/gain và các sửa đã có; nhận dạng độc lập audio mới trước–qua–sau mối nối, kiểm biên từ và lưu phạm vi rà thực tế. Không báo đã nghe trực tiếp toàn bộ nếu phương pháp chỉ là ASR/waveform. Một lượt quét hết thời lượng không tự bảo đảm đã hết nói lặp.
+
 ASR có thể gộp nhiều lần nói cùng cụm thành một dòng, bỏ hẳn câu lặp, hoặc gán cả một cụm nói lại vào token ngắn như “và”, “các”. Khi token một từ kéo dài bất thường hoặc người dùng báo lặp dù transcript chỉ xuất hiện một lần, không kết luận video không lặp. Kiểm tra audio tương ứng trong source và bản dựng, đối chiếu source in/out của từng clip. Một segment/clip không đồng nghĩa một câu hoặc một take.
+
+Nhận dạng lại cả đoạn dài, kể cả tắt VAD, vẫn có thể tự rút hai lần nói thành một câu sạch. Khi có dấu hiệu này, chia vùng nghi vấn thành các cửa sổ ngắn độc lập chứa riêng từng lần mở câu, có ngữ cảnh và overlap ở biên; đối chiếu từng cửa sổ với waveform và câu đầy đủ phía sau. Rà cả token dài bất thường so với nhịp nói xung quanh (ví dụ một từ kéo 0.7–2s), không chỉ danh sách khoảng im lặng. Không dùng độ dài token làm lệnh cắt: âm kéo để nhấn vẫn có thể hợp lệ. Sau cắt, nhận dạng độc lập quanh từng mối nối và quét lại audio đầu ra; chỉ ghi đạt khi các lần mở câu thừa đã biến mất khỏi media, không chỉ khỏi phụ đề.
 
 Kiểm tra có ngữ cảnh trước và sau đoạn nghi vấn. Nếu không có khả năng nghe trực tiếp, có thể dùng nhận dạng độc lập trên audio để đối chiếu, kiểm từng lần khởi động lại và mốc source; ghi đúng phương pháp và giới hạn, không nói đã nghe/xem toàn bộ chỉ từ ASR hay vài frame. Không đổi transcript nguồn sang bản ASR mới hàng loạt, vì sẽ làm hỏng các caption đã sửa.
 

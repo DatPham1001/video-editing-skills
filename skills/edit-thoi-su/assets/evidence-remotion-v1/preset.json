@@ -16,7 +16,7 @@
   "summary": {"left":32,"right":32,"fontSize":54,"fontWeight":800,"lineHeight":1.13,"maxLines":2},
   "summaryLabel": {"fontSize":27,"offsetY":-42},
   "note": {"fontSize":34,"lineHeight":1.25,"offsetY":182,"maxLines":2},
-  "fonts": {"family":"ReferenceSans","bold":"fonts/reference-bold.ttf","regular":"fonts/reference-regular.ttf"},
+  "fonts": {"family":"Arial, sans-serif"},
   "nativeBackgroundEffect": {"type":"effect","assetId":"builtin:fx-gaussian-blur","propertyOverrides":{"radius":180},"scope":"every overlapping original talking-head clip; exact intersection only"},
   "render": {"codec":"vp9","imageFormat":"png","pixelFormat":"yuva420p","videoBitrate":"5M","concurrency":2,"audio":false},
   "captionProtection": {"doNotRepaginateExistingCards":true,"maxLines":2,"maxWhitespaceWords":8,"referenceFontSize":48,"referenceTop":1414,"referenceHeight":110},

@@ -1,0 +1,23 @@
+# Capture bài báo dài và tô theo thoại
+
+Áp dụng cho capture bài báo/tài liệu dùng làm evidence trong bản dựng, cả popup và chia khung. Mỗi insert tự thực hiện đối chiếu → chọn vùng → canh thoại → kiểm hình, không đợi yêu cầu highlight riêng. Đây là lớp tô màu trên ảnh gốc, không phải phụ đề hay chữ ANTON.
+
+Khi thêm hoặc thay capture, cập nhật highlight cùng lần sửa đó. Trước khi giao preview hoặc xuất bản, rà danh sách mọi capture đang dùng: mỗi capture có cụm khớp thoại phải có vùng tô và timing đã kiểm; giữ highlight này trong bản xuất Full HD. Không để thao tác thay ảnh làm mất vệt tô cũ hoặc dùng tọa độ của ảnh trước.
+
+## Chọn nguồn và chụp trang
+
+- Rà kho capture trước. Khi tìm thêm, ưu tiên nguồn chính thức hoặc báo đáng tin cậy, mới nhất trong các bài hỗ trợ đúng câu thoại. Đọc nội dung và ngày đăng, phân biệt ngày đăng với ngày sự kiện. Một bài nói về kế hoạch, khả năng hoặc khuyến cáo chỉ hỗ trợ đúng phạm vi đó. Nếu nguồn mới chỉ nhắc gián tiếp, ưu tiên bài có chứng cứ trực tiếp và giữ rõ ngày để người xem tự đối chiếu.
+- Chụp trang thật ở viewport điện thoại với chữ đủ lớn. Nếu cần bản Việt, dịch ngay trên trang trước khi chụp và so lại câu chữ, phủ định, con số và đơn vị với nguyên văn. Giữ nguyên ngữ khi người dùng yêu cầu giữ nguyên bài báo. Giữ bố cục, ảnh, logo và thông tin nguồn trong phần chụp.
+- Chụp dài để có **tiêu đề đầy đủ, logo thật nếu có, ngày đăng và đoạn nội dung trực tiếp hỗ trợ lời thoại**. Crop bỏ quảng cáo, mục liên quan hoặc khoảng trống. Khi đoạn dẫn chứng ở sâu, dùng hai crop từ cùng trang theo đúng thứ tự, hoặc chuyển từ đầu bài sang thân bài. Giữ trọn từng đoạn, dòng ngày và đơn vị. Kiểm bằng kích thước pixel thực của PNG. Lưu URL gốc, ngày đăng, ngôn ngữ hiển thị, ảnh đã dùng và mốc trên timeline trong job.
+- Cho card trượt từ trên xuống và giảm tốc trong khoảng 0.55s. Với bố cục popup 1080×1920 của Video 10, tham chiếu x≈110, y≈160, rộng≈810px, vùng nhìn thấy cao tối đa khoảng 1030px để chừa phụ đề bên dưới. Giữ đầu bài đủ lâu để đọc rồi cuộn dọc có giới hạn nếu nội dung dài. Cho đoạn được tô vào vùng nhìn thấy đúng nhịp và giữ đọc rõ khoảng 4 giây sau entry khi lời thoại cho phép. Nếu cuộn không kịp đọc, chọn đoạn thân bài gần ý hơn hoặc thêm một nhịp riêng. Vùng tô di chuyển cùng ảnh.
+- Bài báo giữ vai trò dẫn chứng. Với chữ nhấn lời thoại hoặc motion graphic giải thích cơ chế và tỷ lệ, dùng lớp đồ họa riêng theo [dựng theo nhịp thoại](speech-timed-editing.md).
+
+## Tô và kiểm trên timeline
+
+- Đọc câu thoại tại thời điểm insert và chữ thật trong capture. Chọn cụm nguồn diễn đạt đúng ý đang nói, giữ phủ định, chủ thể và attribution. Khi bài tiếng khác, chọn cụm tương đương nghĩa; không cần giống từng chữ.
+- **Số liệu là một phần bắt buộc của cụm cần nhấn:** bao trọn mọi chữ số, dấu phân cách, dấu âm, %, tiền tệ và đơn vị có liên quan. Nếu thoại nói “ba mươi nghìn binh lính” và ảnh có “30,000 U.S. troops”, phải tô cả `30,000` và phần đơn vị tương ứng. Với năm/ngày, tô đúng mốc được nói hoặc được người dùng chỉ định làm điểm dẫn chứng.
+- Chọn crop chứa cả câu lẫn số liệu cần nhấn. Nếu số nằm ngoài crop hiện tại, lấy thêm section/capture thật hoặc điều chỉnh crop để số đọc rõ. Không vẽ số mới vào bài báo để giả rằng nguồn có số đó. Nguồn không có cụm/số phù hợp thì chọn nguồn khác hoặc ghi lý do không có highlight trong hồ sơ job; không tô nội dung không liên quan để đủ màu.
+- Đo bounding box trên ảnh thật theo pixel gốc. Một dòng một vùng; số/đơn vị có thể dùng vùng riêng. Lưu `sceneId`, `asset`, `phrase`, `spokenPhrase`, `start`, `duration`, `regions: [x,y,w,h]` trong dữ liệu job. Tọa độ và kích thước phải theo cùng ảnh đã crop, không theo kích thước composition.
+- Lớp màu vàng dịu kiểu multiply, gợi ý `#f0d677` opacity khoảng 0.55–0.65; chữ nguồn vẫn sắc nét. Vệt quét khoảng 0.3–0.5s, bắt đầu theo cụm được nói; các vùng xuống dòng tiếp nối tự nhiên. Giữ các vệt đã xuất hiện tới hết scene. Dùng frame/timing đã lưu để preview và render giống nhau, không CSS animation hoặc random trong render.
+- Khi nội dung bắt đầu được nói trước lúc card vào, quét ngay sau entry để còn đủ thời gian đọc. Không sửa cắt/tiếng hoặc đổi ý nguồn chỉ để khớp vệt tô. Giữ nguồn, ngày và nội dung gốc; không tô masthead/byline hay mọi số trong trang chỉ vì đó là số.
+- Kiểm từng capture ở entry, trước quét, đang quét, sau quét và lúc cuộn đến đoạn dẫn chứng trên composition thực. Xác nhận tiêu đề, logo và ngày xuất hiện rõ, card không lấn phụ đề. Đối chiếu bounding box, chữ xuống dòng, toàn bộ chữ số/đơn vị, clipping và khả năng đọc ở kích thước xem. Lưu still/manifest kiểm; không báo hoàn tất chỉ vì đã thêm dữ liệu tọa độ.

@@ -18,8 +18,8 @@ export const EvidenceCardV1:React.FC<EvidenceProps>=({kicker,publisher,source,re
   const r=spring({frame:f,fps,config:{damping:19,stiffness:210,mass:.65}});
   const enter=interpolate(f,[0,5],[.15,1],ease);
   const exit=interpolate(f,[d-6,d-1],[1,0],ease);
-  return <AbsoluteFill style={{fontFamily:'ReferenceSans',color:'#F7FAFC',opacity:exit}}>
-    <style>{`@font-face{font-family:ReferenceSans;src:url('${staticFile('fonts/reference-bold.ttf')}');font-weight:700 900;}@font-face{font-family:ReferenceSans;src:url('${staticFile('fonts/reference-regular.ttf')}');font-weight:400 600;}`}</style>
+  return <AbsoluteFill style={{fontFamily:'Arial, sans-serif',color:'#F7FAFC',opacity:exit}}>
+
     <AbsoluteFill style={{backgroundColor:'rgba(5,12,22,.46)',opacity:enter}}/>
     <div style={{position:'absolute',inset:0,opacity:enter,translate:`0 ${interpolate(r,[0,1],[64,0])}px`,scale:interpolate(r,[0,1],[.94,1])}}>
       <div style={{position:'absolute',left:110,top:100,fontSize:44,fontWeight:700,letterSpacing:1,color:'#54E0C6'}}>{kicker}</div>

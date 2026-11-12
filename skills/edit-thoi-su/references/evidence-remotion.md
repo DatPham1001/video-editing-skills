@@ -8,11 +8,11 @@ Preset cũ tùy chọn, chỉ dùng khi người dùng yêu cầu tái hiện đ
 
 ## Tái sử dụng đúng hiệu ứng
 
-Dùng [component](../assets/evidence-remotion-v1/EvidenceCardV1.tsx) cùng [preset cố định](../assets/evidence-remotion-v1/preset.json). Copy component vào source Remotion và hai font trong `assets/evidence-remotion-v1/fonts/` vào `public/fonts/`. Giữ bản component đã kiểm tra; không viết lại theo trí nhớ hoặc tự đổi palette, vị trí, spring, dimmer, blur và timing. Font là Arial đã dùng trong video tham chiếu; dùng trong cùng môi trường được cấp phép, không tự phát hành font như một sản phẩm riêng.
+Dùng [component](../assets/evidence-remotion-v1/EvidenceCardV1.tsx) cùng [preset cố định](../assets/evidence-remotion-v1/preset.json). Copy component vào source Remotion. Preset dùng Arial do hệ thống cung cấp và fallback sans-serif khi thiếu Arial. Giữ palette, vị trí, spring, dimmer, blur và timing của preset.
 
 Preset 1080×1920, 30fps: thẻ trắng 840×960 tại (120,190), bo 22px; kicker teal ở (110,100), nguồn ở (120,1162). Nền dim rgba(5,12,22,.46). Entry: opacity .15→1 trong 5f; spring damping19/stiffness210/mass.65, Y64→0, scale .94→1; xoay -2°→0° trong 12f. Gạch vàng quét từ f7→17. Exit 6f cuối. Chi tiết đầy đủ nằm trong preset JSON và component.
 
-Các effect đã dùng trước đó cũng được giữ nguyên mã nguồn: [StoryCard](../assets/evidence-remotion-v1/StoryCard.tsx) cho thẻ ảnh báo nguyên trang AP/Reuters, câu hỏi, ảnh minh họa, lựa chọn nhà hàng/cà phê và bữa ăn; [Headline](../assets/evidence-remotion-v1/Headline.tsx) cho hook, tiêu đề nhấn và caveat. StoryCard/Headline dùng Props như trong file, cùng font ReferenceSans. Headline có canvas1080×340, cần đặt vị trí theo vùng mặt/caption thực tế; StoryCard dùng1080×1920. Không copy nội dung bài báo hoặc tên file cũ sang job mới. Hai nhánh `ap`/`reuters` của StoryCard giữ crop mẫu1920×1080 cũ; chỉ dùng nguyên crop khi screenshot trùng bố cục, còn bài khác dùng EvidenceCardV1 với regions được kiểm tra.
+Các effect đã dùng trước đó cũng được giữ nguyên mã nguồn: [StoryCard](../assets/evidence-remotion-v1/StoryCard.tsx) cho thẻ ảnh báo nguyên trang AP/Reuters, câu hỏi, ảnh minh họa, lựa chọn nhà hàng/cà phê và bữa ăn; [Headline](../assets/evidence-remotion-v1/Headline.tsx) cho hook, tiêu đề nhấn và caveat. StoryCard/Headline dùng Props như trong file, cùng font Arial của hệ thống. Headline có canvas1080×340, cần đặt vị trí theo vùng mặt/caption thực tế; StoryCard dùng1080×1920. Không copy nội dung bài báo hoặc tên file cũ sang job mới. Hai nhánh `ap`/`reuters` của StoryCard giữ crop mẫu1920×1080 cũ; chỉ dùng nguyên crop khi screenshot trùng bố cục, còn bài khác dùng EvidenceCardV1 với regions được kiểm tra.
 
 Chỉ thay nội dung `kicker`, `publisher`, `source`, `regions`, `summary`, `note`, `summaryTop` và thời lượng. Đăng ký từng Composition riêng với defaultProps inline, fps30, width1080, height1920. Thời lượng nên 3–5s, canh câu nói thật; nếu câu ngắn có thể khoảng 2.9s. Không kéo thẻ sang luận điểm chưa có nguồn chỉ để đủ thời lượng.
 
@@ -53,4 +53,4 @@ Thay các giá trị ví dụ bằng asset/track/range thật. Kiểm tra overla
 
 Không gọi global caption resegmentation khi chỉ thêm evidence: có thể làm mất custom text/name flags. Giữ revision và nội dung captions hiện có, xác nhận không đổi. Nếu UI báo stale nhưng source không đổi, chỉ kiểm tra trạng thái; không tự repaginate.
 
-Lưu manifest job gồm props/crop, source, source-claim mapping, timeline in/out, asset/item/effect IDs thực tế, component/preset/font SHA256 và ảnh kiểm tra. Skill chứa component/preset/font đã kiểm thử; muốn đổi phong cách thì tạo v2, giữ nguyên v1 để tái dùng y hệt.
+Lưu manifest job gồm props/crop, source, source-claim mapping, timeline in/out, asset/item/effect IDs thực tế, SHA-256 của component và preset, font hệ thống được dùng và ảnh kiểm tra. Skill chứa component và preset; muốn đổi phong cách thì tạo v2, giữ nguyên v1 để tái dùng y hệt.
